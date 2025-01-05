@@ -6,7 +6,7 @@ def handle_client(connectionSocket, addr):
     print(f"Connected to client: {addr}")
     while True:
         sentence = connectionSocket.recv(1024).decode()
-        if not sentence:
+        if not sentence: 
             break  # Exit loop if no message is received
         print(f"Received from {addr}: {sentence}")
         replay = input("Reply to the message: ")
@@ -28,3 +28,4 @@ while True:
     # Create a new thread to handle this client
     client_thread = Thread(target=handle_client, args=(connectionSocket, addr))
     client_thread.start()
+  
