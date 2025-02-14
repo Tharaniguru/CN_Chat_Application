@@ -14,14 +14,19 @@ export default function Sidebar() {
 
   const [conversations,setConversations] = useState([
     {
-      name:"swetha",
+      name:"Swetha",
       lastMessage: "hi",
       timeStamp:"today",
     },
     {
-      name:"swathi",
+      name:"Swathi",
       lastMessage:"hello",
       timeStamp:"today",
+    },
+    {
+      name:"Tharani",
+      lastMessage:"hello",
+      timeStamp:"yesterday",
     }
   ])
 
@@ -64,7 +69,7 @@ export default function Sidebar() {
 
       <div className='sb-conversation'>
         {conversations.map((conversation)=>{
-          return <ConversationsItem {...conversation}/>
+          return <ConversationsItem  {...conversation}/>
         })}
         
       </div>
