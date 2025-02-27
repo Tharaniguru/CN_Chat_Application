@@ -10,10 +10,6 @@ export default function ConversationsItem(props) {
             <p className="con-title">{props.name}</p>
             <p className='con-lastMessage'>{props.lastMessage}</p>
             <p className="con-timeStamp">{props.timeStamp}</p>
-        
-     
-
-
     </div>
   )
 }
